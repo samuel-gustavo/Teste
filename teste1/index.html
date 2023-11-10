@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha JS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="main">
+        <h1 class="vez-jogador">Clique em qualquer espaço para começar a partida!</h1>
+        <br>
+        <table class="tabela">
+            <tr>
+                <td>
+                    <div id="p00" onclick="jogar(0, 0, this)"></div>
+                </td>
+                <td>
+                    <div class="linha-vertical" id="p01" onclick="jogar(0, 1, this)"></div>
+                </td>
+                <td>
+                    <div id="p02" onclick="jogar(0, 2, this)"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="linha-horizontal" id="p10" onclick="jogar(1, 0, this)"></div>
+                </td>
+                <td>
+                    <div id="p11"onclick="jogar(1, 1, this)"></div>
+                </td>
+                <td>
+                    <div class="linha-horizontal" id="p12" onclick="jogar(1, 2, this)"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div id="p20"onclick="jogar(2, 0, this)"></div>
+                </td>
+                <td>
+                    <div class="linha-vertical" id="p21" onclick="jogar(2, 1, this)"></div>
+                </td>
+                <td>
+                    <div id="p22" onclick="jogar(2, 2, this)"></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
